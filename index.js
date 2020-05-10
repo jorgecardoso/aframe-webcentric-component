@@ -34,8 +34,12 @@ AFRAME.registerComponent('webcentric', {
       }
     }
     console.log(window.location.hash);
-    if (window.location.hash) {
-      var hash = window.location.hash.substr(1);
+    let params = window.location.hash;
+    if (!params) {
+      params = window.location.search;
+    }
+    if (params) {
+      var hash = params.substr(1);
 
       var result = hash.split("&").reduce(function(result, item) {
         var parts = item.split("=");
