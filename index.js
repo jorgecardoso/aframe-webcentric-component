@@ -19,6 +19,14 @@ AFRAME.registerComponent('webcentric', {
      * Called once when component is attached. Generally for initial setup.
      */
     init: function () {
+		
+		THREE.Math = { //Fix
+			degToRad: THREE.MathUtils.degToRad,
+			radToDeg: THREE.MathUtils.radToDeg,
+randInt: THREE.MathUtils.randInt,
+randFloat: THREE.MathUtils.randFloat
+};
+
         let _this = this;
         this._hasStats = false;
         let scene = this.el.sceneEl;
