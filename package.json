@@ -1,6 +1,6 @@
 {
   "name": "aframe-webcentric-component",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Web-Centric functionality for A-Frame",
   "main": "index.js",
   "unpkg": "dist/aframe-webcentric-component.min.js",

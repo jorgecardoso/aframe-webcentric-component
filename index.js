@@ -8,7 +8,9 @@ if (typeof AFRAME === 'undefined') {
  * Web-Centric component for A-Frame.
  */
 AFRAME.registerComponent('webcentric', {
-    camerarig: {type: "selector", default: "#camerarig"},
+    schema: {
+		camerarig: {type: "selector", default: "#camerarig"}
+	},
 
     /**
      * Set if component needs multiple instancing.
